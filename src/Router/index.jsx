@@ -5,6 +5,7 @@ import LayoutPrivate from "../Layout/LayoutPrivate";
 
 import Home from "../Pages/Home"
 import Dashboard from "../Pages/Dashboard"
+import Register from "../Pages/Register";
 
 export const router = createBrowserRouter([
     {
@@ -14,6 +15,10 @@ export const router = createBrowserRouter([
             {
                 index: true,
                 element: <Home />
+            },
+            {
+                path: "/register",
+                element: <Register />
             },
             {
                 path: '/dashboard',
